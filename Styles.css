@@ -1,0 +1,43 @@
+#navbarback{
+    background-color: grey;
+}.nav-link ,.navbar-brand{
+    text-decoration:none;
+    color: white;
+}.nav-link:hover ,.navbar-brand:hover{
+    color: black;
+}.tabla{
+    background-color: rgb(220, 219, 219);
+}#opciones>a{
+    text-decoration: underline;
+    border: solid 2px rgb(100, 100, 100);
+}
+#opciones{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}#opciones>a{
+    height: 50px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+}
+#contenedor{
+display: flex;
+padding: 10%;
+}
+#tablas{
+    width: 100%;
+}
+#titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}.container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+}
+.carousel-item{
+    border: solid red;
+}

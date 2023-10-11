@@ -1,3 +1,4 @@
+
 #navbarback{
     background-color: grey;
 }.nav-link ,.navbar-brand{
@@ -10,16 +11,22 @@
 }#opciones>a{
     text-decoration: underline;
     border: solid 2px rgb(100, 100, 100);
+    color: black;
+}
+#opciones2>a{
+    text-decoration: underline;
+    border: solid 2px rgb(100, 100, 100);
+    color: black;
 }
 #opciones{
     display: flex;
     flex-direction: column;
     margin-right: 20px;
 }#opciones>a{
+    padding: 4%;
     height: 50px;
     width: 300px;
-    align-items: center;
-    text-align: center;
+    align-items: left; 
 }
 #contenedor{
 display: flex;
@@ -38,6 +45,98 @@ padding: 10%;
     margin-bottom: 40px;
     
 }
-.carousel-item{
+#myCarousel{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+.slide{
+    text-align: center;
+    width: 500px;
+    padding: 50px auto;
+    overflow: hidden;
+    
+}
+
+
+.slide ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+
+
+    animation: slide 9s infinite linear;
+}
+
+
+.slide li{
+    font-family: 'Gabarito', cursive;
+    list-style: none;
+    width: 100%;
     border: solid red;
 }
+
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    30% {margin-left: 0%;}
+
+
+    35% {margin-left: -100%;}
+    55% {margin-left: -100%;}
+
+
+    60% {margin-left: -200%;}
+    90% {margin-left: -200%;}
+}
+
+@media (max-width: 960px){
+    #opciones{
+        visibility:hidden;
+    }
+    
+}
+@media (max-width: 720px){
+    #opciones{
+        visibility:hidden;
+    }
+    #tablas{
+        display: flex;
+        justify-content: center;
+    }
+    .slide{
+        text-align: center;
+        width: 200px;
+        margin-left: 90px;
+        overflow: hidden;
+    }
+}
+@media (max-width: 540px){
+    #opciones{
+        visibility:hidden;
+    }
+    .slide{
+        text-align: center;
+        width: 200px;
+        margin-left: 50px;
+        overflow: hidden;
+    }
+    .tabla{
+        width: 200px;
+        margin-left: 5%;
+        height: 90%;
+    }   
+    #contenedor{
+        width: 0px;
+    }
+    #tablas{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+
+    }
+}
+ 
